@@ -1,0 +1,161 @@
+﻿.body{
+    margin: 0;
+    background: rgb(5, 5, 5);
+    background: linear-gradient(180deg, rgb(7, 7, 7) 0%, rgb(30, 255, 0) 100%);
+    }
+    
+    .main{
+        display: flex;
+        position:relative;
+        top: 1vh;
+        left: 1vw;
+        height: 98vh;
+        width: 98vw;
+        background-color: #c5e2bb;
+        border-radius: 50px;
+        font-family: 'Pangolin', cursive;
+    }
+
+    .esquerda{
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .esquerda > h1 {
+        color: #000000;
+    }
+
+    .direita {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 10px;
+        border-radius: 12px;
+        background-color: #d8eed0;
+        width: 60%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    form > h1 {
+        background: linear-gradient(100deg, rgb(15, 9, 12) 0%, rgb(30, 255, 0) 45%, rgb(0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    form > label {
+        background: linear-gradient(100deg, rgb(0, 0, 0) 0%, rgb(30, 255, 0)  45%, rgb(0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 900;
+        font-size: 20px;
+    
+    }
+    
+    form > input {
+        background: rgb(255, 253, 254);
+        background: linear-gradient(100deg, rgb(255, 255, 255) 0%100%);
+        border-radius: 10px;
+        border: none;
+        padding: 5% 5%;
+        
+        
+    }
+    form > input::placeholder {
+        color: #000000;
+    }
+    
+    form > button {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(100deg, rgb(221, 212, 212)100%);
+        color: #000000;
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        padding: 7% 32%;
+    }
+    
+    form > button:hover{
+        transform: scale(120%);
+        transition: all 0.2s ease;
+    }
+    
+    .card:hover{
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        transition: all 0.2s ease;
+        
+    }
+    
+    .girar:hover{
+        animation: Girar 4s linear infinite;
+    }
+    
+    
+    @-webkit-keyframes Fundo {
+        0%{background-position:0% 91%}
+        50%{background-position:100% 10%}
+        100%{background-position:0% 91%}
+    }
+    @-moz-keyframes Fundo {
+        0%{background-position:0% 91%}
+        50%{background-position:100% 10%}
+        100%{background-position:0% 91%}
+    }
+    @keyframes Fundo {
+        0%{background-position:0% 91%}
+        50%{background-position:100% 10%}
+        100%{background-position:0% 91%}
+    }
+    
+    @keyframes Girar {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        main{
+            flex-direction: column;
+        }
+    
+        .right{
+            margin-top: -10%;
+            margin-bottom: 20%;
+        }
+    
+        .left > h1 {
+            display: none;
+        }
+    
+        .left > img {
+            transform: scale(50%);
+        }
+    
+        body > div{   
+            background-size: 50%;
+        }
+    }
